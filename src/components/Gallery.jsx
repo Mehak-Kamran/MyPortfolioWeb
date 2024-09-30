@@ -54,8 +54,9 @@ const splitText = (text) => {
 
 
 const Gallery = () => {
-  const [prevIcon] = useState("/src/assets/images/leftw.png");
-  const [nextIcon] = useState("/src/assets/images/rightw.png");
+  const [prevIcon] = useState("/public/leftw.png");
+const [nextIcon] = useState("/public/rightw.png");
+
 
   const [selectedImage, setSelectedImage] = useState(null); // For modal
 

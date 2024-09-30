@@ -10,8 +10,7 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
 
 
-//step1
-import { useState } from "react";
+
 
 import { motion } from "framer-motion";
 
@@ -57,14 +56,7 @@ const textContainer = {
 
 
 const Testimonial = () => {
-    //step2
-  const [prevIcon, setPrevIcon] = useState(
-    "/src/assets/images/leftw.png"
-  );
-  const [nextIcon, setNextIcon] = useState(
-    "/src/assets/images/rightw.png"
-  );
-  
+    
   const data = [
     { name: "fightbback247", review: "Seller did an excellent job enhancing and perfecting skin tones in my photos, creating flawless results that look completely natural.She was able to adjust color balance, exposure, and contrast to achieve a beautiful complexion. The seller has a keen eye for detail and an understanding of light and shadow to ensure the final result appears realistic.",image:boy
 
@@ -89,10 +81,7 @@ const Testimonial = () => {
     dotData: true,
     animateOut: 'slideOutDown',
     animateIn: 'flipInX',
-    navText: [
-        `<div class="nav-btn prev-slide"><img src="${prevIcon}" width="100%" /></div>`,
-        `<div class="nav-btn next-slide"><img src="${nextIcon}" width="100%" /></div>`,
-      ],
+    
   };
   return (
     <Container id="testimonial" sx={{
@@ -107,13 +96,7 @@ const Testimonial = () => {
                             viewport={{ once: true }}
                             variants={textContainer}
                         >
-       <Typography className="text-center" sx={{ fontFamily: "poppins-bold", color: "#333333", fontSize: {
-              xs: "2rem",
-              sm: "2rem",
-              lg: "50px",
-              xl: "50px",
-              md: "50px",
-            }, padding: "25px 5px",textAlign:"center" }}>
+       <Typography className="text-center" sx={{ fontFamily: "poppins-bold", color: "#333333", fontSize: { xs: '', lg: '50px', xlg: '50px' }, padding: "25px 5px",textAlign:"center" }}>
        {splitText("Testimonials")}
         </Typography>
         </motion.div>
