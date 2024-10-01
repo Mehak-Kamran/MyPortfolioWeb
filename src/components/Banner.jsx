@@ -73,8 +73,8 @@ const Follow = () => {
                         viewport={{ once: true }}
                         transition={{ type: "spring", bounce: 0.5, duration: 5, delay: 0.5 }}
                     >
-                        <Box sx={{ width: { lg: "80%", xlg: "80%", sm: "20%", xs: "20%", md: "55%" } }}>
-                            <img src={mob} alt="Mobile"  />
+                        <Box sx={{ width: { lg: "80%", xlg: "80%", sm: "100%", xs: "100%", md: "80%" }}}>
+                            <img src={mob} alt="Mobile" style={{width:"100%"}}   />
                         </Box>
                     </motion.div>
                 </Grid>
