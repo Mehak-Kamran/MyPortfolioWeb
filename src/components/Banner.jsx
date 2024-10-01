@@ -40,9 +40,9 @@ const splitText = (text) => {
 const Follow = () => {
     return (
         <Container id="home" sx={{marginTop:"100px"}}>
-            <Grid container spacing={2} sx={{ marginTop: "30px" }}>
-            <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: { xs: "column" }, justifyContent: { xs: 'center' }, alignItems: { xs: 'center' } }} >
-                    <Box sx={{ width: "400px" }}>
+            <Grid container spacing={2} sx={{ marginTop: "30px", }}>
+            <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: { xs: "column" , sm:"column" }, justifyContent: { xs: 'center',sm:"center" }, alignItems: { xs: 'center',sm:"center" }}} >
+                    <Box sx={{ width: {xs:"300px",sm:"300px",md:"350px",lg:"400px",xlg:"400px"},}}>
                         <motion.div
                             initial="hidden"
                             whileInView="visible"
@@ -66,7 +66,7 @@ const Follow = () => {
                         </motion.div>
                     </Box>
                 </Grid>
-                <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: { xs: "column" }, justifyContent: { xs: 'center' }, alignItems: { xs: 'center' } }} >
+                <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: { xs: "column" }, justifyContent: { xs: 'center' }, alignItems: { xs: 'center' }} } >
                     <motion.div
                         initial={{ x: -300, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}

@@ -55,9 +55,9 @@ const Contact = () => {
 
 
     <Box id="contact" sx={{marginTop:"100px"}}>
-        <Grid container spacing={2} direction="row">
+        <Grid container direction="row">
             
-            <Grid item xs={12} md={7}>
+            <Grid item xs={12} md={6}>
             <motion.div
                             initial="hidden"
                             whileInView="visible"
@@ -78,14 +78,27 @@ const Contact = () => {
         </motion.div>
 
             </Grid>
-            <Grid item md={5} xs={12}>
+            <Grid item  xs={12} md={6}>
             <motion.div
     initial={{ x: 300, opacity: 0 }}
     whileInView={{ x: 0, opacity: 1 }}
     viewport={{ once: true }}
     transition={{ type: "spring", bounce: 0.5, duration: 5, delay: 0.5 }}
+    
     > 
-                <img src={profile2} style={{width:"500px"}}/>
+
+<Box
+            sx={{
+              width: { lg: "50%", xlg: "50%", sm: "55%", xs: "55%", md: "55%" },
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginLeft:"100px"
+            }}
+          >
+            <img src={profile2} style={{ width: "500px" ,marginTop:"100px"}} />
+          </Box>
+                
                 </motion.div>
             </Grid>
         </Grid>
