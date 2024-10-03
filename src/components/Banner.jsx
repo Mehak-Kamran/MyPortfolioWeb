@@ -49,7 +49,7 @@ const Follow = () => {
                             viewport={{ once: true }}
                             variants={textContainer}
                         >
-                            <Typography sx={{ marginBottom: "5px", fontSize: { xs: '2rem', sm: '2rem', lg: '55px', xl: '55px', md: '50px' }, fontFamily: "poppins-bold", color: "#333333" }}>
+                            <Typography sx={{ marginBottom: "5px", fontSize: { xs: '2rem', sm: '2rem', lg: '55px', xl: '55px', md: '40px' }, fontFamily: "poppins-bold", color: "#333333" }}>
                                 {splitText("Hi,I'm Mehak!")}
                             </Typography>
                         </motion.div>
@@ -73,7 +73,7 @@ const Follow = () => {
                         viewport={{ once: true }}
                         transition={{ type: "spring", bounce: 0.5, duration: 5, delay: 0.5 }}
                     >
-                        <Box sx={{ width: { lg: "80%", xlg: "80%", sm: "95%", xs: "95%", md: "80%" }}}>
+                        <Box sx={{ width: { lg: "90%", xlg: "90%", sm: "95%", xs: "95%", md: "88%" }}}>
                             <img src={mob} alt="Mobile" style={{width:"100%"}}   />
                         </Box>
                     </motion.div>

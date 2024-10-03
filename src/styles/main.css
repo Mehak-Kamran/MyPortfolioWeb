@@ -150,6 +150,14 @@
   }
   
 
+  /* Hide navigation buttons on medium screens */
+@media (min-width: 0px) and (max-width: 1200px) {
+    .nav-btn {
+      display: none;
+    }
+  }
+  
+
  
 
 

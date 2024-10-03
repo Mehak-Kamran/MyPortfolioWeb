@@ -73,7 +73,6 @@ const [nextIcon] = useState(`/rightw.png`);
   ];
 
   const options = {
-    items: 4,
     nav: true,
     dots: false,
     rewind: true,
@@ -90,6 +89,20 @@ const [nextIcon] = useState(`/rightw.png`);
       `<div class="nav-btn prev-slide"><img src="${prevIcon}" width="100%" /></div>`,
       `<div class="nav-btn next-slide"><img src="${nextIcon}" width="100%" /></div>`,
     ],
+    responsive: {
+      0: {
+        items: 1, // Show 1 item on small screens (xs)
+      },
+      600: {
+        items: 2, // Show 2 items on medium screens
+      },
+      900: {
+        items: 4, // Show 3 items on larger screens (md)
+      },
+      1200: {
+        items: 4, // Show 4 items on large screens (lg and above)
+      },
+    },
   };
 
   // Close modal

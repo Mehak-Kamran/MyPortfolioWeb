@@ -68,7 +68,6 @@ const Testimonial = () => {
 ];
 
   const options = {
-    items: 3,
     nav: true,
     dots: false,
     rewind: true,
@@ -81,6 +80,20 @@ const Testimonial = () => {
     dotData: true,
     animateOut: 'slideOutDown',
     animateIn: 'flipInX',
+    responsive: {
+        0: {
+          items: 1, // Show 1 item on small screens (xs)
+        },
+        600: {
+          items: 1, // Show 2 items on medium screens
+        },
+        900: {
+          items: 3, // Show 3 items on larger screens (md)
+        },
+        1200: {
+          items: 3, // Show 4 items on large screens (lg and above)
+        },
+      }
     
   };
   return (
@@ -96,7 +109,13 @@ const Testimonial = () => {
                             viewport={{ once: true }}
                             variants={textContainer}
                         >
-       <Typography className="text-center" sx={{ fontFamily: "poppins-bold", color: "#333333", fontSize: { xs: '', lg: '50px', xlg: '50px' }, padding: "25px 5px",textAlign:"center" }}>
+       <Typography className="text-center" sx={{ fontFamily: "poppins-bold", color: "#333333", fontSize: {
+              xs: "2rem",
+              sm: "2rem",
+              lg: "50px",
+              xl: "50px",
+              md: "50px",
+            }, padding: "25px 5px",textAlign:"center" }}>
        {splitText("Testimonials")}
         </Typography>
         </motion.div>
