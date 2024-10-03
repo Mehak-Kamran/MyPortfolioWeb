@@ -17,7 +17,7 @@ const About = () => {
   >
     <Box
       sx={{
-        width: { lg: "100%", xlg: "100%", sm: "85%", xs: "80%", md: "100%" }, // Adjust these for responsiveness
+        width: { lg: "100%", xlg: "100%", sm: "90%", xs: "88%", md: "100%" }, // Adjust these for responsiveness
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
