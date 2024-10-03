@@ -17,7 +17,7 @@ const About = () => {
   >
     <Box
       sx={{
-        width: { lg: "100%", xlg: "100%", sm: "70%", xs: "80%", md: "100%" }, // Adjust these for responsiveness
+        width: { lg: "100%", xlg: "100%", sm: "85%", xs: "80%", md: "100%" }, // Adjust these for responsiveness
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -60,7 +60,7 @@ const About = () => {
               </Typography>
               </motion.div>
             </item>
-            <item><Typography sx={{ fontSize: { xs: '15', sm: '15', lg: '18px', xl: '18px', md: '15' }, fontFamily: "poppins-regular", color: "#666666" }}>
+            <item><Typography sx={{ fontSize: { xs: '14px', sm: '14px', lg: '18px', xl: '18px', md: '15px' }, fontFamily: "poppins-regular", color: "#666666" }}>
             A computer science student on <span style={{ color: '#005ACD', fontWeight: "bold" }}>a mission to make code look as delicious as it feels.</span>  I love crafting user-friendly websites and bringing ideas to life with creativity and code. Always eager to learn, explore new challenges, and serve up something exciting in the world of web development.
                              
             </Typography></item>
