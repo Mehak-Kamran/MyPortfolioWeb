@@ -8,26 +8,31 @@ const About = () => {
   return (
     <Container id="about" sx={{ marginTop: "100px" }}>
         <Grid container spacing={2} direction="row" sx={{margin:"10px"}} >
-            <Grid item xs={12} md={5}>
-            <motion.div
+        <Grid item xs={12} md={5}>
+  <motion.div
     initial={{ x: -300, opacity: 0 }}
     whileInView={{ x: 0, opacity: 1 }}
     viewport={{ once: true }}
     transition={{ type: "spring", bounce: 0.5, duration: 5, delay: 0.5 }}
-    > 
-          <Box
-            sx={{
-              width: { lg: "50%", xlg: "50%", sm: "55%", xs: "55%", md: "55%" },
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginLeft:"60px"
-            }}
-          >
-            <img src={girllt} style={{ width: "500px" ,marginTop:"100px"}} />
-          </Box>
-        </motion.div>
-            </Grid>
+  >
+    <Box
+      sx={{
+        width: { lg: "100%", xlg: "100%", sm: "70%", xs: "80%", md: "100%" }, // Adjust these for responsiveness
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: { xs: "50px", md: "100px" }, // Responsive margin for small screens
+      }}
+    >
+      <img 
+        src={girllt} 
+        alt="girl illustration"
+        style={{ width: "100%" }} // Ensure full width of the container
+      />
+    </Box>
+  </motion.div>
+</Grid>
+
             <Grid item xs={12} md={7}>
             <Stack direction="column">
             <item style={{marginTop:"80px"}}>
@@ -55,7 +60,7 @@ const About = () => {
               </Typography>
               </motion.div>
             </item>
-            <item><Typography sx={{ fontSize: { xs: '', sm: '', lg: '18px', xl: '18px', md: '' }, fontFamily: "poppins-regular", color: "#666666" }}>
+            <item><Typography sx={{ fontSize: { xs: '15', sm: '15', lg: '18px', xl: '18px', md: '15' }, fontFamily: "poppins-regular", color: "#666666" }}>
             A computer science student on <span style={{ color: '#005ACD', fontWeight: "bold" }}>a mission to make code look as delicious as it feels.</span>  I love crafting user-friendly websites and bringing ideas to life with creativity and code. Always eager to learn, explore new challenges, and serve up something exciting in the world of web development.
                              
             </Typography></item>

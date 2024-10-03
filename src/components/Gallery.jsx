@@ -71,7 +71,7 @@ const [nextIcon] = useState(`/rightw.png`);
     { image: web6 },
     
   ];
-
+ 
   const options = {
     nav: true,
     dots: false,
