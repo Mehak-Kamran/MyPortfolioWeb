@@ -104,7 +104,7 @@ const Footer = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "start",
-              marginLeft: {lg:"400px",xs:"170px",sm:"350px",xlg:"400px",md:"200px"},
+              marginLeft: {lg:"400px",xs:"120px",sm:"300px",xlg:"400px",md:"200px"},
             }}
           >
             <item>
