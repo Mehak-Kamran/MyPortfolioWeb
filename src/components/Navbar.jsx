@@ -45,20 +45,22 @@ const Navbar = () => {
         >
           <MenuIcon sx={{ color: "white" }} />
         </IconButton>
+        
         <Box
           display="flex"
           alignItems="center"
           component="div" 
-          sx={{ flexGrow: 1 }}
+          sx={{ flexGrow: 1,width:{xs:"10%",sm:"10%",md:"5%",lg:"10%",xlg:"10%"}}}
         >
           <a href="#home">
             <img
               src={favicon}
-              style={{ maxWidth: { xs: "50px" } }}
+              style={{ width:"60%"}}
               alt="Logo"
             />
           </a>
         </Box>
+        
         <Box sx={{ display: { xs: "none", md: "block" } }}>
           {menuItems.map((item) => (
             <Button

@@ -55,7 +55,7 @@ const Contact = () => {
 
 
     <Box id="contact" sx={{marginTop:"100px"}}>
-        <Grid container direction="row">
+        <Grid container direction="row" >
             
             <Grid item xs={12} md={6}>
             <motion.div

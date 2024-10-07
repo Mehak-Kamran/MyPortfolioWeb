@@ -157,7 +157,7 @@ const Footer = () => {
 <item>
     <Typography sx={{
                   color: "white",
-                  fontSize: "14px",
+                  fontSize: {xlg:"14px",lg:"14px",md:"14px",sm:"10px",xs:"10px"},
                   fontFamily: "poppins-medium",
                   
                 }}>Website designed and developed by Mehak Kamran.</Typography>
